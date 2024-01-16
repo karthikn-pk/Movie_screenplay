@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+   
 </head>
 <body>
     <div class="imglogo"> <img src="images.png" alt="">
@@ -16,18 +16,18 @@
         <h1>let do it..</h1>
 
         <div class="container_user">
-            <label for="">Username:</label>
-            <input type="text">
+            <label for="username">Username:</label>
+            <input type="text" id="username" autocomplete="username">
         </div>
         <div class="container_password">
-            <label for="">Password:</label>
-            <input type="password">
+            <label for="password">Password:</label>
+            <input type="password" id="password" autocomplete="current-password">
         </div>
         <div class="btn">
-            <button>Login</button>
+            <button id="btn1">Login</button>
         </div>
     </div>
    
-   
+    <script src="script.js"></script>
 </body>
 </html>
