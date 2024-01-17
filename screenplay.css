@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    display: flex;
+    height: 100vh;
+}
+.writingArea{
+    position: absolute;
+    margin: 10px;
+    width: 75%;
+    top: 0;
+    left: 0;
+
+}
+#writingspace{
+    border: 2px groove saddlebrown;
+}
+.tools{
+    position: absolute;
+    margin: 10px;
+    width: 25%;
+    left: 75%;
+
+}

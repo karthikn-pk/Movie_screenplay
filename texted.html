@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="screenplay.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="writingArea">
+        <textarea name="textspace" placeholder="lets create a our world...." id="writingspace" cols="150" rows="200"></textarea> 
+    </div>
+    <div class="tools">
+        <button id="int-btn" >internal</button>
+        <button id="ext-btn">external</button>
+    </div>
+    <script >
+        let wrtSpace=document.getElementById("writingspace");
+document.getElementById("int-btn").addEventListener("click",function (){
+    let currentContent=wrtSpace.value;
+    wrtSpace.value=currentContent+"INT. Coffee Day -- DAY\n";
+
+});
+document.getElementById("ext-btn").addEventListener("click",function (){
+    let currentContent=wrtSpace.value;
+    wrtSpace.value=currentContent+"EXT. Coffee Day -- DAY\n";
+
+});
+    </script>
+</body>
+</html>
