@@ -44,6 +44,7 @@ body{
     font-size: larger;
     padding: 5px;
     left: 0;
+    border-radius: 5px;
    
 }
 .tools #ext-btn{
@@ -53,5 +54,6 @@ body{
     color: white;
     padding: 5px;
     font-size: larger;
+    border-radius: 5px;
     
 }
