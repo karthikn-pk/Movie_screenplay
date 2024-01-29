@@ -22,8 +22,8 @@
     
     
     <script >
-        let wrtSpace=document.getElementById("writingspace");
-document.getElementById("int-btn").addEventListener("click",function (){
+    let wrtSpace=document.getElementById("writingspace");
+    document.getElementById("int-btn").addEventListener("click",function (){
     let currentContent=wrtSpace.value;
     wrtSpace.value=currentContent+"INT. Coffee Day -- DAY\n";
 
@@ -37,30 +37,9 @@ document.getElementById("ext-btn").addEventListener("click",function (){
 var profiles = [];
 
 function createProfile() {
-  var characterName = prompt("Please enter the character's name:");
-  var characterAge = prompt("Please enter the character's age:");
-  var characterBio = prompt("Please enter a short bio for the character:");
-
-  if (characterName != null && characterAge != null && characterBio != null) {
-    // Create the character profile
-    var profile = {
-      name: characterName,
-      age: characterAge,
-      bio: characterBio
-    };
-
-    // Add the profile to the profiles array
-    profiles.push(profile);
-
-    // Create a new option for the select
-    var option = document.createElement('option');
-    option.text = profile.name;
-    option.value = profiles.length - 1;
-
-    // Add the option to the select
-    document.getElementById('characterProfiles').add(option);
+  
   }
-}
+
 
 document.getElementById('characterProfiles').addEventListener('change', function() {
   var profile = profiles[this.value];
