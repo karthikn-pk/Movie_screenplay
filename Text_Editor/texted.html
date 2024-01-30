@@ -10,13 +10,15 @@
     <div class="writingArea">
         <textarea name="textspace" placeholder="lets create a our world...." id="writingspace" cols="150" rows="200"></textarea> 
     </div>
-    <div class="tools">
+    <div id="tools">
         <h1>pick anything</h1>
         <button id="int-btn" >Internal</button>
         <button id="ext-btn">External</button>
         <button id="characterProf" onclick="createProfile()">Character Profile</button>
+        <input type="text" name="" id="enterChar" placeholder="Enter Character name">
+        <button id="addChar" >ADD</button>
     </div>
-  
+    
     
     
     
@@ -26,6 +28,7 @@
     let currentContent=wrtSpace.value;
     wrtSpace.value=currentContent+"INT. Coffee Day -- DAY\n";
 
+
 });
 document.getElementById("ext-btn").addEventListener("click",function (){
     let currentContent=wrtSpace.value;
@@ -33,19 +36,20 @@ document.getElementById("ext-btn").addEventListener("click",function (){
 
 });
 
-var profiles = [];
-
-function createProfile() {
-  
-  }
 
 
-document.getElementById('characterProfiles').addEventListener('change', function() {
-  var profile = profiles[this.value];
+document.getElementById("addChar").addEventListener("click",function () {
+    const charEL=document.getElementById("enterChar").value
+    const charBut=document.createElement("button")
+    charBut.innerHTML=charEL;
+    const targetDiv=document.getElementById("tools");
+    targetDiv.appendChild(charBut);
+    document.getElementById("enterChar").value="";
+    
+})
 
-  // Display the selected profile
-  alert('Name: ' + profile.name + '\nAge: ' + profile.age + '\nBio: ' + profile.bio);
-});
+
+
     </script>
 </body>
 </html>

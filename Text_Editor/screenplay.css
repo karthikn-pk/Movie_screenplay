@@ -24,7 +24,7 @@ body{
     color: white;
     
 }
-.tools{
+#tools{
     position: relative;
     text-align: center;
     margin-top: 5px;
@@ -52,4 +52,8 @@ button {
 #characterProf {
     display: block;
     margin: 0 auto;
+}
+
+#enterChar{
+    margin-top: 10px;
 }
