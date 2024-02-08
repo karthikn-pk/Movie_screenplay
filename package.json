@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "name": "mov",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  
+  "scripts": {
+    "build": "npx tailwindcss -i ./Login/styles.css -o ./Login/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthikn-pk/Movie_screenplay.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karthikn-pk/Movie_screenplay/issues"
+  },
+  "homepage": "https://github.com/karthikn-pk/Movie_screenplay#readme",
+  "description": ""
+}
